@@ -1,0 +1,60 @@
+.slide {
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    display: block;
+}
+
+.btn-animate {
+    transition: transform 0.1s ease-in-out;
+}
+
+.btn-animate:active {
+    transform: scale(0.95);
+}
+
+/* OTP Input Styling */
+input[type="text"] {
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4F46E5;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Custom Animation Classes */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}

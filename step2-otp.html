@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventura - OTP Verification</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body class="bg-gray-900 min-h-screen">
+    <div class="max-w-md mx-auto p-6">
+        <div class="flex items-center mb-12">
+            <a href="index.html" class="text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </a>
+            <div class="bg-white p-2 rounded-md ml-2">
+                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="navy">
+                    <path d="M12 2L2 22h20L12 2zm0 3l7.5 15h-15L12 5z" />
+                </svg>
+            </div>
+            <h1 class="text-white text-3xl ml-2 font-semibold">ventura</h1>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 shadow-lg">
+            <h2 class="text-2xl font-bold mb-2">OTP sent</h2>
+            <p class="mb-4">We have sent an OTP to your mobile number +91 ****8595</p>
+
+            <div class="grid grid-cols-6 gap-2 mb-6">
+                <input type="text" maxlength="1" class="w-full text-center bg-gray-100 rounded-lg px-2 py-2">
+                <input type="text" maxlength="1" class="w-full text-center bg-gray-100 rounded-lg px-2 py-2">
+                <input type="text" maxlength="1" class="w-full text-center bg-gray-100 rounded-lg px-2 py-2">
+                <input type="text" maxlength="1" class="w-full text-center bg-gray-100 rounded-lg px-2 py-2">
+                <input type="text" maxlength="1" class="w-full text-center bg-gray-100 rounded-lg px-2 py-2">
+                <input type="text" maxlength="1" class="w-full text-center bg-gray-100 rounded-lg px-2 py-2">
+            </div>
+
+            <div class="flex justify-between items-center mb-6">
+                <span class="text-gray-600">00:58s</span>
+                <button class="text-blue-600">Resend OTP</button>
+            </div>
+
+            <a href="step3-email.html" class="block w-full">
+                <button class="w-full bg-blue-600 text-white rounded-lg py-2">
+                    Verify OTP
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
